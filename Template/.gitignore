@@ -1,0 +1,19 @@
+# OpenCode / lokale Abhängigkeiten
+.opencode/node_modules/
+.opencode/bun.lock
+.opencode/package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Temporäre Beispiel-Arbeit
+examples/**/temp/*
+!examples/**/temp/.gitkeep
+examples/**/work/*
+!examples/**/work/.gitkeep

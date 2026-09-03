@@ -1,0 +1,45 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "lmstudio/MODEL-ID",
+  "default_agent": "workflow-guide-agent",
+  "provider": {
+    "lmstudio": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LM Studio (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:1234/v1"
+      },
+      "models": {
+        "MODEL-ID": {
+          "name": "Lokales LM-Studio-Modell"
+        }
+      }
+    }
+  },
+  "permission": {
+    "glob": "allow",
+    "grep": "allow",
+    "lsp": "allow",
+    "skill": "allow",
+    "todowrite": "allow",
+    "question": "allow",
+    "task": "deny",
+    "edit": "ask",
+    "bash": {
+      "*": "ask",
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+      "git reset*": "deny",
+      "git clean*": "deny",
+      "rm *": "deny",
+      "sudo *": "deny",
+      "git commit*": "deny",
+      "git push*": "deny"
+    },
+    "webfetch": "ask",
+    "websearch": "deny",
+    "external_directory": "ask",
+    "doom_loop": "ask"
+  }
+}

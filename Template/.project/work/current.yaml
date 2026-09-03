@@ -1,0 +1,28 @@
+# Maschinenlesbarer Zustand der aktuell aktiven längeren Arbeit.
+# Führend für Work-State, aber NICHT für den Inhalt eines Steps.
+# Do/Verify/Verified stehen führend im aktiven Plan.
+
+work_id: ""
+title: ""
+status: "idle" # idle | planned | in_progress | blocked | review | completed
+technology: "" # z. B. net | cpp | other
+agent: ""
+branch: ""
+phase: ""
+active_spec: ""
+active_plan: ""
+scope: []
+completed_steps: []
+current_step: ""
+next_step: "" # Hinweis auf logisch nächsten Step; keine Freigabe
+last_checkpoint: ""
+files_touched: []
+verification:
+  status: "not_run" # not_run | passed | failed | manual_required | manual_verified | blocked
+  method: ""
+  result: ""
+  evidence: ""
+  verified_at: ""
+open_questions: []
+risks: []
+updated_at: ""

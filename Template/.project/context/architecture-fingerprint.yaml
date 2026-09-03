@@ -1,0 +1,19 @@
+architecture:
+  style: ""
+  entrypoints: []
+  modules: []
+  shared: []
+  boundaries: []
+
+knowledge:
+  # Jeder Eintrag verwendet genau einen Zustand:
+  # observed | decided | unknown | conflict
+  items:
+    # - topic: "database-access"
+    #   state: "observed"
+    #   description: "Direkter Datenbankzugriff ist in Modul X sichtbar."
+    #   evidence:
+    #     - "src/module/file.ext"
+    #   reason: null
+    #   source: null
+    #   conflicts: []

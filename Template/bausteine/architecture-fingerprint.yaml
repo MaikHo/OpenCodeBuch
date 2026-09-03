@@ -1,0 +1,11 @@
+architecture:
+  style: ""
+  entrypoints: []
+  modules: []
+  shared: []
+  boundaries: []
+
+knowledge:
+  # Für einzelne Architekturinformationen verwenden:
+  # observed | decided | unknown | conflict
+  items: []
